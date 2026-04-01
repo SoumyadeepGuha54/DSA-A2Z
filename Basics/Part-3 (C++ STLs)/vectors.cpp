@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     vector<int> v1;
+    // implementation of singly linked list
 
     v1.push_back(1);    // {1}
     v1.emplace_back(2); // {1, 2}

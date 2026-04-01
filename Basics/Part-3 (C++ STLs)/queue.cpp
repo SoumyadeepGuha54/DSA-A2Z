@@ -7,15 +7,12 @@ int main()
     // uses FIFO (First In First Out)
     // time complexity is O(1) for all the operations
 
-    q.push(1);
-    q.push(2);
-    q.emplace(3);
-    q.emplace(4);
+    q.push(1);    // {1}
+    q.push(2);    // {1, 2}
+    q.emplace(3); // {1, 2, 3}
+    q.emplace(4); // {1, 2, 3, 4}
+    q.pop();      // {2, 3, 4}
 
-    cout << q.front() << endl;
-    cout << q.back() << endl;
-
-    q.pop();
     cout << q.front() << endl;
     cout << q.back() << endl;
 
