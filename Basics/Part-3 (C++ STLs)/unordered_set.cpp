@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     unordered_set<int> us;
-    // stores elements in default order
+    // stores unique elements in default order
 
     return 0;
 }

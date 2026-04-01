@@ -20,7 +20,7 @@ int main()
 
     auto it = st.find(3);
     auto it = st.find(6);
-    // if iterator fails to find an element in set, it returns the end element
+    // if iterator fails to find an element in set, it returns the last element
 
     st.erase(3); // {1, 2, 4, 5}
     // time complexity is O(logn)

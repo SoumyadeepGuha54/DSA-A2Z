@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     multiset<int> ms;
-    // stores elements in sorted order
+    // stores elements in sorted order, duplicates allowed
 
     ms.insert(1); // {1}
     ms.insert(2); // {1, 2}
