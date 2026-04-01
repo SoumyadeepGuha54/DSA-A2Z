@@ -11,10 +11,10 @@ int main()
     pq.push(10);
     pq.push(8);
     // time complexity of push is O(logn)
-    
+
     cout << pq.top() << endl;
     // time complexity of top is O(1)
-    
+
     pq.pop();
     // time complexity of pop is O(logn)
     cout << pq.top() << endl;
