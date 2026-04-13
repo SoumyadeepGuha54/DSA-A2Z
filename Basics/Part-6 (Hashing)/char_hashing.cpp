@@ -7,8 +7,8 @@ int main()
     cout << "Enter string: ";
     cin >> str;
     
-    int hash[26] = {0};
-    for(int i = 0; i < str.size(); i++) hash[str[i] - 'a']++;
+    int hash[256] = {0};
+    for(int i = 0; i < str.size(); i++) hash[str[i]]++;
 
     int q;
     cout << "Enter number of alphabets to search for: ";
@@ -18,7 +18,7 @@ int main()
         char ch;
         cout << "Enter alphabet: ";
         cin >> ch;
-        cout << ch << " : " << hash[ch - 'a'] << endl;
+        cout << ch << " : " << hash[ch] << endl;
     }
 
     return 0;
