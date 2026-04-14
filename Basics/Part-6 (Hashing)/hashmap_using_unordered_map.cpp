@@ -8,8 +8,9 @@ int main()
     cin >> n;
     
     int arr[n];
-    map<int, int> mp;
-    // time complexity is O(logn)
+    unordered_map<int, int> mp;
+    // best and average case time complexity is O(1)
+    // worst case time complexity is O(n) (extreme rare case)
     
     cout << "Enter elements:" << endl;
     for(int i = 0; i < n; i++)
