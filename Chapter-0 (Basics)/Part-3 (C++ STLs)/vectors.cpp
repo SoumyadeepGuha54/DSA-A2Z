@@ -4,7 +4,6 @@ using namespace std;
 int main()
 {
     vector<int> v1;
-    // implementation of singly linked list
 
     v1.push_back(1);    // {1}
     v1.emplace_back(2); // {1, 2}
@@ -25,6 +24,10 @@ int main()
 
     vector<int> v5(v4); // {12, 23, 34, 45, 56}
     // copies elements of a vector to another vector
+
+    vector<int> v6 = {23, 12, 56, 45, 34};
+    sort(v6.begin(), v6.end());                 // {12, 23, 34, 45, 56}
+    sort(v6.begin(), v6.end(), greater<int>()); // {56, 45, 34, 23, 12}
 
     cout << v4[0] << endl; // 12
     // prints first element of vector
