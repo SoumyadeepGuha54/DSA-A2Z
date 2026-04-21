@@ -2,17 +2,27 @@
 using namespace std;
 
 // Brute Force Approach:
-vector<int> removeDuplicates(vector<int> nums) {
+int removeDuplicates1(vector<int> nums) {
     set<int> st;
     for(int i = 0; i < nums.size(); i++) st.insert(nums[i]);
-    vector<int> v;
-    for(auto it : st) v.emplace_back(it);
-    return v;
+    return st.size();
 }
+// time complexity is O(nlogn)
+
+// Optimal Solution:
+int removeDuplicates2(vector<int> nums) {
+    int i = 0;
+    for(int j = 1; j < nums.size(); j++) if(nums[i] != nums[j]) {
+        nums[i + 1] = nums[j];
+        i++;
+    }
+    return i + 1;
+}
+// time complexity is O(n)
 
 int main() {
-    vector<int> v1 = {12, 12, 23, 34, 34, 45, 56, 56};
-    vector<int> v2 = removeDuplicates(v1);
-    for(auto it : v2) cout << it << " ";
+    vector<int> v = {12, 12, 23, 34, 34, 45, 56, 56};
+    cout << removeDuplicates1(v) << endl;
+    cout << removeDuplicates2(v) << endl;
     return 0;
 }
