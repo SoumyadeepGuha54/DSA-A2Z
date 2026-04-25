@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int missingNumber0(vector<int>& nums) {
+int missingNumber0(vector<int> nums) {
     int n = nums.size();
     int sum = (n * (n + 1)) / 2, temp = 0;
     for(auto it : nums) temp += it;
