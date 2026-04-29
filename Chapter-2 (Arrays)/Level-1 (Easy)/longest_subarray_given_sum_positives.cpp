@@ -29,7 +29,7 @@ int length2(vector<int> nums, int target) {
 }
 // TC: O(n^2), SC: O(1)
 
-// Optimal Solution:
+// Better Solution:
 int length3(vector<int> nums, int target) {
     int n = nums.size(), len = 0, sum = 0;
     unordered_map<int, int> mp;
