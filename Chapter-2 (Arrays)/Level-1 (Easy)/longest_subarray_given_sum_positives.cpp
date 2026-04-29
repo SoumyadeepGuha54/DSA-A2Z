@@ -43,10 +43,26 @@ int length3(vector<int> nums, int target) {
 }
 // TC: O(n), SC: O(n)
 
+// Optimal Solution:
+int length4(vector<int> nums, int target) {
+    int n = nums.size(), l = 0, sum = 0, len = 0;
+    for(int r = 0; r < n; r++) {
+        sum += nums[r];
+        while(sum > target) {
+            sum -= nums[l];
+            l++;
+        }
+        if(sum == target) len = max(len, r - l + 1);
+    }
+    return len;
+}
+// TC: O(2n), SC: O(1)
+
 int main() {
     vector<int> v = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
     cout << length1(v, 3) << endl;
     cout << length2(v, 3) << endl;
     cout << length3(v, 3) << endl;
+    cout << length4(v, 3) << endl;
     return 0;
 }
