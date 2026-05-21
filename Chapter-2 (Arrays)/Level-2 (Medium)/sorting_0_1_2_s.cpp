@@ -36,8 +36,7 @@ vector<int> sort3(vector<int> nums) {
 }
 // TC: O(n), SC: O(1)
 
-int main()
-{
+int main() {
     vector<int> v = {0, 1, 2, 1, 1, 0, 2, 2, 0, 0, 1, 2};
     vector<int> result1 = sort1(v);
     for(auto it : result1) cout << it << " ";
