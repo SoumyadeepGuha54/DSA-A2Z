@@ -50,8 +50,7 @@ vector<int> maxSumIndices(vector<int> nums) {
 }
 // TC: O(n), SC: O(1)
 
-int main()
-{
+int main() {
     vector<int> v = {-2, -3, 4, -1, -2, 1, 5, -3};
     cout << maxSum1(v) << endl;
     cout << maxSum2(v) << endl;

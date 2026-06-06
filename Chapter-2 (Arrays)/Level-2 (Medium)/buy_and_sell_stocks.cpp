@@ -15,8 +15,7 @@ int maxProfit2(vector<int> prices) {
 }
 // TC: O(n), SC: O(1)
 
-int main()
-{
+int main() {
     vector<int> v = {6, 2, 4, 3, 5, 1};
     cout << maxProfit1(v) << endl;
     cout << maxProfit2(v) << endl;
