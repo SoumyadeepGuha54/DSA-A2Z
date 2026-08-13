@@ -38,7 +38,7 @@ vector<vector<int>> threeSum2(vector<int> nums) {
     vector<vector<int>> res(st.begin(), st.end());
     return res;
 }
-// TC: O(n^2 * logn), SC: O(n + k) [vector(return) and set(solve)]
+// TC: O(n^2 * logn), SC: O(k + m) [vector(return) and set(solve)]
 
 // Optimal Solution:
 vector<vector<int>> threeSum3(vector<int> nums) {
