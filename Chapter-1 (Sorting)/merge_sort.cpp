@@ -24,7 +24,7 @@ void mergeSort(int arr[], int low, int high) {
 
 int main() {
     int arr[] = {23, 12, 56, 45, 34};
-    mergeSort(arr, 0, 5);
+    mergeSort(arr, 0, 4);
     for(int i = 0; i < 5; i++) cout << arr[i] << " ";
     return 0;
 }
